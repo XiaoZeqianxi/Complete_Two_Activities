@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>请完成两个活动</title>
+    <script>
+        // 定义两个活动的URL（替换为你的实际URL）
+        const activityUrl1 = "https://market.cmbchina.com/MPage/online/250522104535661/qdoq.html";
+        const activityUrl2 = "https://market.cmbchina.com/MPage/online/240918181125685/byov.html?RcmID=040443&MID=corp8&AuthType=snsapi_base&OpenID=oDXZ9jqtxfFrZ45WJMbwnuE26sLw&unionid=&is_snapshotuser=&TimeStamp=1755520337&Nonce=1390&Signature=dEyngCH%2faN8bkkHgIabSM331V8q1eke%2bX38EEFtgqjI%3d";
+        
+        // 页面加载时自动触发
+        window.onload = function() {
+            // 先在新标签页打开第一个活动
+            window.open(activityUrl1, '_blank');
+            
+            // 3秒后打开第二个活动（降低被浏览器拦截的概率）
+            setTimeout(() => {
+                window.open(activityUrl2, '_blank');
+                
+                // 提示用户（可选）
+                alert("请确保参与完两个活动！");
+            }, 3000);
+        };
+    </script>
+</head>
+<body>
+    <h1>正在跳转到活动页面...</h1>
+    <p>如果未自动跳转，请点击：</p >
+    活动1 | 
+    
+</body>
+</html>
