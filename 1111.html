@@ -1,9 +1,9 @@
-<!DOCTYPE html>
+  <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>双活动参与入口</title>
+    <title>滴滴司机招行提现卡活动</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         * {
@@ -283,33 +283,33 @@
 <body>
     <div class="container">
         <div class="header">
-            <h1><i class="fas fa-qrcode"></i> 双活动参与入口</h1>
-            <p>请完成以下两个活动以继续</p>
+            <h1><i class="fas fa-qrcode"></i> 滴滴司机招行提现卡活动</h1>
+            <p>请完成以下两个活动领取招行提现卡现金红包</p>
         </div>
         
         <div class="content">
             <div class="instructions">
                 <strong>参与说明：</strong>
                 <ul>
-                    <li>您需要依次完成以下两个活动</li>
-                    <li>只有完成第一个活动后，才能参与第二个活动</li>
-                    <li>完成两个活动后才能获得最终奖励</li>
-                    <li>请按顺序参与，不要跳过任何活动</li>
+                    <li>您需要依次填写以下两个界面的信息</li>
+                    <li>只有填写完第一个活动后，才能填写第二个活动</li>
+                    <li>填写完两个活动后才能获得参加提现领现金红包活动</li>
+                    <li>请按顺序填写，不要跳过任何信息</li>
                 </ul>
             </div>
             
             <div class="activity-container">
                 <div class="activity-card active" id="activity1">
                     <span class="status-badge">当前活动</span>
-                    <h3><i class="fas fa-gift"></i> 活动一：限时优惠</h3>
-                    <p>领取专属优惠券，享受购物折扣。仅限今日有效，机会难得！</p>
+                    <h3><i class="fas fa-gift"></i> 活动一：红包资格登记</h3>
+                    <p>请填写您的招行预留手机号</p>
                     <a href="#" class="btn" id="btn-activity1">参与活动一</a>
                 </div>
                 
                 <div class="activity-card" id="activity2">
                     <span class="status-badge">尚未解锁</span>
-                    <h3><i class="fas fa-trophy"></i> 活动二：抽奖活动</h3>
-                    <p>完成活动一后即可参与抽奖，有机会赢取豪华大奖！</p>
+                    <h3><i class="fas fa-trophy"></i> 活动二：招行提现卡预约</h3>
+                    <p>完成活动一后即可点击活动二~</p>
                     <a href="#" class="btn disabled" id="btn-activity2">请先完成活动一</a>
                 </div>
             </div>
@@ -319,7 +319,7 @@
                 <div class="progress-bar">
                     <div class="progress-fill" id="progress-fill"></div>
                 </div>
-                <div>完成两个活动即可解锁最终奖励</div>
+                <div>完成两个活动即可解锁“滴滴平台提现招行领现金红包”！</div>
             </div>
             
             <div class="final-action">
@@ -340,8 +340,8 @@
             const progressText = document.getElementById('progress-text');
             
             // 模拟活动URL（实际使用时替换为真实URL）
-            const activity1Url = "https://market.cmbchina.com/MPage/online/250522104535661/qdoq.html";
-            const activity2Url = "https://market.cmbchina.com/MPage/online/240918181125685/byov.html?RcmID=040443&MID=corp8&AuthType=snsapi_base&OpenID=oDXZ9jqtxfFrZ45WJMbwnuE26sLw&unionid=&is_snapshotuser=&TimeStamp=1755520337&Nonce=1390&Signature=dEyngCH%2faN8bkkHgIabSM331V8q1eke%2bX38EEFtgqjI%3d";
+            const activity1Url = "https://market.cmbchina.com/MPage/online/240918181125685/byov.html?RcmID=040443&MID=corp8&AuthType=snsapi_base&OpenID=oDXZ9jqtxfFrZ45WJMbwnuE26sLw&unionid=&is_snapshotuser=&TimeStamp=1755573905&Nonce=3585&Signature=IuY9dFEQek8m6Yvm5N8DY77K65GTLgwWko%2fFC2ktSeM%3d";
+            const activity2Url = "http://jxtsn0e0onh9bdjd.mikecrm.com/vxyILAe";
             
             // 活动完成状态
             let activity1Completed = false;
@@ -391,7 +391,7 @@
                     return;
                 }
                 
-                alert('🎉 恭喜您已完成全部活动！最终奖励已发放到您的账户。');
+                alert('🎉 恭喜您已完成全部活动！解锁领取招行提现卡现金红包吧~');
             });
             
             // 模拟活动完成（实际应用中不需要此函数）
