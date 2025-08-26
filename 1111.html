@@ -301,14 +301,14 @@
             <div class="activity-container">
                 <div class="activity-card active" id="activity1">
                     <span class="status-badge">当前活动</span>
-                    <h3><i class="fas fa-gift"></i> 活动一：红包资格登记</h3>
-                    <p>请填写您的招行预留手机号</p>
+                    <h3><i class="fas fa-gift"></i> 活动一：招行提现卡活动问卷</h3>
+                    <p>请按问卷要求填写</p>
                     <a href="#" class="btn" id="btn-activity1">参与活动一</a>
                 </div>
                 
                 <div class="activity-card" id="activity2">
                     <span class="status-badge">尚未解锁</span>
-                    <h3><i class="fas fa-trophy"></i> 活动二：招行提现卡预约</h3>
+                    <h3><i class="fas fa-trophy"></i> 活动二：红包资格登记</h3>
                     <p>完成活动一后即可点击活动二~</p>
                     <a href="#" class="btn disabled" id="btn-activity2">请先完成活动一</a>
                 </div>
@@ -319,7 +319,7 @@
                 <div class="progress-bar">
                     <div class="progress-fill" id="progress-fill"></div>
                 </div>
-                <div>完成两个活动即可解锁“滴滴平台提现招行领现金红包”！</div>
+                <div>完成两个活动请联系招行工作人员领取“滴滴平台提现红包”！</div>
             </div>
             
             <div class="final-action">
@@ -340,8 +340,8 @@
             const progressText = document.getElementById('progress-text');
             
             // 模拟活动URL（实际使用时替换为真实URL）
-            const activity1Url = "https://market.cmbchina.com/MPage/online/240918181125685/byov.html?RcmID=040443&MID=corp8&AuthType=snsapi_base&OpenID=oDXZ9jqtxfFrZ45WJMbwnuE26sLw&unionid=&is_snapshotuser=&TimeStamp=1755573905&Nonce=3585&Signature=IuY9dFEQek8m6Yvm5N8DY77K65GTLgwWko%2fFC2ktSeM%3d";
-            const activity2Url = "http://jxtsn0e0onh9bdjd.mikecrm.com/vxyILAe";
+            const activity1Url = "http://jxtsn0e0onh9bdjd.mikecrm.com/vxyILAe";
+            const activity2Url = "https://market.cmbchina.com/MPage/online/240918181125685/byov.html?RcmID=040443&MID=corp8&AuthType=snsapi_base&OpenID=oDXZ9jqtxfFrZ45WJMbwnuE26sLw&unionid=&is_snapshotuser=&TimeStamp=1755573905&Nonce=3585&Signature=IuY9dFEQek8m6Yvm5N8DY77K65GTLgwWko%2fFC2ktSeM%3d";
             
             // 活动完成状态
             let activity1Completed = false;
@@ -391,7 +391,7 @@
                     return;
                 }
                 
-                alert('🎉 恭喜您已完成全部活动！解锁领取招行提现卡现金红包吧~');
+                alert('🎉 恭喜您已完成全部活动！请尽快联系招行工作人员，解锁领取现金红包吧~');
             });
             
             // 模拟活动完成（实际应用中不需要此函数）
